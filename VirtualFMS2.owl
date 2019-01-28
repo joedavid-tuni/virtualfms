@@ -1,0 +1,554 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#"
+     xml:base="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:VirtualFMS="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#hasAssessment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#hasAssessment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#LearningOutcomes"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Fixture"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Order"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Part_MasterData"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#hasAudience -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#hasAudience">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#isAllignedTowards"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#LearningObjectives"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Student_Group"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#hasBehaviour -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#hasBehaviour">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#LearningObjectives"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Order"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#hasCourseObjective -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#hasCourseObjective">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Course"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#LearningObjectives"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#hasDegree -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#hasDegree">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#LearningObjectives"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#LearningTaxonomy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#hasFixture -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#hasFixture">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Operation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Fixture"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#hasLearningOutcome -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#hasLearningOutcome">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Student_Group"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#hasOperationProcessSteps -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#hasOperationProcessSteps">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Operation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Process"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#hasOperations -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#hasOperations">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Part_MasterData"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Operation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#hasPart -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#hasPart">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Order"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Part_MasterData"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#hasSOLOPoints -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#hasSOLOPoints">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#LearningOutcomes"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#LearningTaxonomy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#isAllignedTowards -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#isAllignedTowards"/>
+    
+
+
+    <!-- http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#isMappedTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#isMappedTo"/>
+    
+
+
+    <!-- http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#studies -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#studies">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Student_Group"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Course"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#teaches -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#teaches">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Lecturer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Course"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#hasCondition -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#hasCondition">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#hasFixtureDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#hasFixtureDescription">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Fixture"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#hasFixtureID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#hasFixtureID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Fixture"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#hasFixtureName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#hasFixtureName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Fixture"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#hasLevel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#hasLevel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#LearningTaxonomy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#hasMaterialItemId -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#hasMaterialItemId">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#hasMaterialOperations"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#hasMaterialItemName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#hasMaterialItemName">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#hasMaterialOperations"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#hasMaterialOperations -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#hasMaterialOperations">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Part_MasterData"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#hasOperationID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#hasOperationID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Part_MasterData"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#hasOperationName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#hasOperationName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Part_MasterData"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#hasOrderDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#hasOrderDescription">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Order"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#hasOrderID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#hasOrderID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Order"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#hasOrderQty -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#hasOrderQty">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Order"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#hasOrderStatus -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#hasOrderStatus">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Order"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#hasPartDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#hasPartDescription">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Part_MasterData"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#hasPartID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#hasPartID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Part_MasterData"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#hasPartName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#hasPartName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Part_MasterData"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#hasProcessAllowedDevices -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#hasProcessAllowedDevices">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Process"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#hasProcessId -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#hasProcessId">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Process"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#hasProcessProgram -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#hasProcessProgram">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Process"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#hasProcessStepName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#hasProcessStepName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Process"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#isPartType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#isPartType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Part_MasterData"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Course -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Course"/>
+    
+
+
+    <!-- http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Fixture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Fixture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Master_Data"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Learning -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Learning"/>
+    
+
+
+    <!-- http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#LearningObjectives -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#LearningObjectives">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Learning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#LearningOutcomes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#LearningOutcomes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Learning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#LearningTaxonomy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#LearningTaxonomy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Learning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Lecturer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Lecturer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#MMS_Dashboard -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#MMS_Dashboard">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Manufacturing_Management_System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#MMS_DataManager -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#MMS_DataManager">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Manufacturing_Management_System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#MMS_Simulator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#MMS_Simulator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Manufacturing_Management_System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Manufacturing_Management_System -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Manufacturing_Management_System"/>
+    
+
+
+    <!-- http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Master_Data -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Master_Data">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#MMS_DataManager"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#NC_Programs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#NC_Programs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#MMS_DataManager"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Operation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Operation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Part_MasterData"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Order -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Order">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Production"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Part_MasterData -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Part_MasterData">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Master_Data"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Process -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Process">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Operation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Production -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Production">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#MMS_DataManager"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Student_Group -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Student_Group">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Tools -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Tools">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#MMS_DataManager"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Course"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Manufacturing_Management_System"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/david/ontologies/2018/9/VirtualFMS#Person"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
